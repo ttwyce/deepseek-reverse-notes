@@ -1,0 +1,81 @@
+# 环境（体积大，本地重建）
+# 核心规则：所有运行时/依赖/缓存都装在本目录内，见 AGENTS.md
+.env/
+.venv/
+.venv.old*/
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# 工具链二进制
+tools/dl/
+tools/jadx/
+tools/jdk21/
+tools/pw-browsers/
+tools/baksmali/
+
+# 原始素材与反编译产物
+input/
+work/apk/
+work/jadx_out/
+work/smali/
+
+# 凭据与登录态（绝不入库）
+tools/local_config.py
+tools/__pycache__/
+work/auth_token.enc
+work/auth_token.json   # 真实登录态（token + device_id），绝不入库
+work/mfa_key.pem
+work/mfa_device.json
+work/trusted_device.json
+work/mfa_state.json
+work/auth_mfa_result.json
+work/trusted_login_result.json
+work/pw_*.json
+work/pw_*.png
+work/devid_*.json
+
+# 截图
+*.png
+*.jpg
+*.jpeg
+
+# work/sm 只保留反混淆核心产物
+work/sm/*
+!work/sm/captcha-sdk.min.js
+!work/sm/captcha-sdk.deob.js
+!work/sm/strtab.json
+!work/sm/vectors.json
+!work/sm/mod_0x5b.js
+
+# 其他临时文件
+*.log
+*.tmp
+.cache/
+
+# local runtime: device fingerprint profile
+work/device_profile.json
+
+# 邮箱注册产物（含 token / device_id）
+work/reg_state.json
+work/reg_result.json
+work/email_reg_state.json
+work/email_reg_send.json
+work/waf_state.json
+
+# 浏览器 profile 与下载的前端 bundle（体积大 / 非源码）
+work/chrome_profile/
+work/main_web.js
+
+# 调试临时脚本
+work/_t*.py
+work/reg_results.json
+
+# 第三方原样转储（版权归各自权利人，不随仓库分发）
+work/web_main.js
+work/web_vendors.js
+work/web_index.html
+work/fp.min.js
+work/dex_strings.txt
+work/sm/captcha-sdk.min.js

@@ -1,0 +1,6 @@
+﻿src = open(r"work\web_main.js", encoding="utf-8", errors="replace").read()
+print("=== 75700..76900 ===")
+print(src[75700:76900])
+print()
+print("=== 78200..78700 ===")
+print(src[78200:78700])

@@ -1,0 +1,83 @@
+# /api/v0/* 接口路径 → HTTP 方法（全量 smali 扫描，取路径行最近的 rg5 引用）
+# 12345 个 smali 文件，78 条唯一路径
+
+| 接口路径 | 方法 | smali 方法 | 位置 | 命中数 | 带 body |
+|---|---|---|---|---|---|
+| `/api/v0/asr/ws` | ? | `public final q(Ljava/lang/Object;Ljava/lang/Object;)...` | `mi:4531` | 2 |  |
+| `/api/v0/call/config` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:1771` | 1 | 是 |
+| `/api/v0/call/rating` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `d0:708` | 1 | 是 |
+| `/api/v0/call/start` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `d0:533` | 3 | 是 |
+| `/api/v0/call/stop` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `d0:358` | 1 | 是 |
+| `/api/v0/call/update` | ? | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `d0:183` | 2 | 是 |
+| `/api/v0/chat/completion` | ? | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:4268` | 4 | 是 |
+| `/api/v0/chat/continue` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:4248` | 2 | 是 |
+| `/api/v0/chat/create_pow_challenge` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `g51:2955` | 1 | 是 |
+| `/api/v0/chat/edit_message` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:4208` | 2 | 是 |
+| `/api/v0/chat/history_messages` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `g51:2605` | 1 | 是 |
+| `/api/v0/chat/message_feedback` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `g51:2259` | 1 | 是 |
+| `/api/v0/chat/regenerate` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:4228` | 2 | 是 |
+| `/api/v0/chat/resume_stream` | POST | `public g(Lvv1;Ljava/lang/Long;)Lh60;` | `rx3:2035` | 1 | 是 |
+| `/api/v0/chat/stop_stream` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `g51:1959` | 1 | 是 |
+| `/api/v0/chat/tts/` | ? | `public final q(Ljava/lang/Object;Ljava/lang/Object;)...` | `ud7:1360` | 1 |  |
+| `/api/v0/chat/tts/voice` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `sw9:794` | 1 | 是 |
+| `/api/v0/chat/tts/voices` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:615` | 1 | 是 |
+| `/api/v0/chat_session/batch_update_pinned` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `ff2:3377` | 1 | 是 |
+| `/api/v0/chat_session/create` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:1538` | 1 | 是 |
+| `/api/v0/chat_session/delete` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `ff2:3186` | 1 | 是 |
+| `/api/v0/chat_session/delete_all` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:1420` | 1 | 是 |
+| `/api/v0/chat_session/fetch_page` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `ff2:2953` | 1 | 是 |
+| `/api/v0/chat_session/update_pinned` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `ff2:2762` | 1 | 是 |
+| `/api/v0/chat_session/update_title` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `ff2:2571` | 1 | 是 |
+| `/api/v0/check_client_update` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `dr2:5296` | 1 | 是 |
+| `/api/v0/client/settings` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `dr2:4941` | 2 | 是 |
+| `/api/v0/client/settings/report` | ? | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `dr2:5109` | 2 | 是 |
+| `/api/v0/client/span` | POST | `private final G(Ljava/lang/Object;)Ljava/lang/Object;` | `mw1:1026` | 1 | 是 |
+| `/api/v0/file/fetch_files` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `dr2:2117` | 1 | 是 |
+| `/api/v0/file/fork_file_task` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `dr2:2280` | 1 | 是 |
+| `/api/v0/file/upload_file` | ? | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `bf2:231` | 2 |  |
+| `/api/v0/index/prepare` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:1290` | 1 | 是 |
+| `/api/v0/index/query` | ? | `public final o(Ljava/lang/String;Ljava/lang/String;)...` | `fy1:949` | 2 | 是 |
+| `/api/v0/ip_to_country_code` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:1180` | 1 | 是 |
+| `/api/v0/share/content` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `sw9:4858` | 1 | 是 |
+| `/api/v0/share/create` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `sw9:4631` | 1 | 是 |
+| `/api/v0/share/delete` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `sw9:4449` | 1 | 是 |
+| `/api/v0/share/fork` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `sw9:4267` | 1 | 是 |
+| `/api/v0/share/list` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `sw9:4047` | 1 | 是 |
+| `/api/v0/telemetry` | ? | `public final b(JLfb4;Lve5;)Ljava/lang/Object;` | `xe5:641` | 3 | 是 |
+| `/api/v0/users/auth_token/check_device` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `eza:3644` | 1 | 是 |
+| `/api/v0/users/auth_token/list` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:261` | 1 | 是 |
+| `/api/v0/users/auth_token/revoke` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:1048` | 1 | 是 |
+| `/api/v0/users/check_email_code` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:3840` | 1 | 是 |
+| `/api/v0/users/check_sms_code` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `olb:53` | 1 | 是 |
+| `/api/v0/users/create_email_verification_code` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:3490` | 1 | 是 |
+| `/api/v0/users/create_guest_challenge` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:3315` | 1 | 是 |
+| `/api/v0/users/create_sms_verification_code` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `plb:53` | 1 | 是 |
+| `/api/v0/users/current` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:497` | 1 | 是 |
+| `/api/v0/users/email_reset_password` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:2965` | 1 | 是 |
+| `/api/v0/users/get_birthday` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `qlb:513` | 1 |  |
+| `/api/v0/users/login` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:72` | 1 | 是 |
+| `/api/v0/users/login_by_mobile_sms` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:2440` | 1 | 是 |
+| `/api/v0/users/logout` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `qlb:390` | 1 |  |
+| `/api/v0/users/logout_all_sessions` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `qlb:267` | 1 |  |
+| `/api/v0/users/mfa/check_verification_code` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:3665` | 1 | 是 |
+| `/api/v0/users/mfa/create_verification_code` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:3140` | 1 | 是 |
+| `/api/v0/users/mfa/trusted_device/register` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `eza:3449` | 1 | 是 |
+| `/api/v0/users/mfa/trusted_device/verify` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `eza:3059` | 1 | 是 |
+| `/api/v0/users/mfa/verify_signature` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:523` | 1 | 是 |
+| `/api/v0/users/mobile_reset_password` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:1923` | 1 | 是 |
+| `/api/v0/users/oauth/get_token` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:2615` | 1 | 是 |
+| `/api/v0/users/oauth/google/login` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:2790` | 1 | 是 |
+| `/api/v0/users/oauth/wechat/bind` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:4015` | 1 | 是 |
+| `/api/v0/users/oauth/wechat/login` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:173` | 1 | 是 |
+| `/api/v0/users/oauth/wechat/mobile_verification` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:348` | 1 | 是 |
+| `/api/v0/users/oauth/wechat/unbind` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:134` | 1 | 是 |
+| `/api/v0/users/one_tap_login` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:1748` | 1 | 是 |
+| `/api/v0/users/rebind_mobile/finish` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:1573` | 1 | 是 |
+| `/api/v0/users/rebind_mobile/start` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:1398` | 1 | 是 |
+| `/api/v0/users/rebind_mobile/verify_disabled_old_mobile` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:698` | 1 | 是 |
+| `/api/v0/users/register` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:1223` | 1 | 是 |
+| `/api/v0/users/register_by_mobile` | ? | `static constructor <clinit>()V` | `hp3:58` | 3 |  |
+| `/api/v0/users/set_birthday` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `eza:3254` | 1 | 是 |
+| `/api/v0/users/settings` | GET | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `k01:379` | 1 | 是 |
+| `/api/v0/users/unregister` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `qlb:144` | 1 |  |
+| `/api/v0/users/update_settings` | POST | `public final A(Ljava/lang/Object;)Ljava/lang/Object;` | `x9b:873` | 1 | 是 |

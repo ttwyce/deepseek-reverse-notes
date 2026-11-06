@@ -1,0 +1,880 @@
+abort
+    file: defpackage\ny2.java
+
+ack
+    file: defpackage\qy2.java
+    fields: received_seq, played_seq
+
+com.deepseek.chat.account.InputConfigManager.AsrLanguage
+    file: defpackage\zs5.java
+    fields: code, name
+
+com.deepseek.chat.account.model.AppUserRemoteSettings
+    file: defpackage\ez.java
+    fields: training_allowed?
+
+com.deepseek.chat.account.model.KVAppUserInfo
+    file: defpackage\rb6.java
+    fields: token, id, email?, mobile_number?, status, chat_status, id_profiles?, need_birthday?, is_mainland?, minor_mode_status?
+
+com.deepseek.chat.biz_manager.pow.AuthedPowSolution
+    file: defpackage\qe0.java
+    fields: algorithm, challenge, salt, signature, answer, target_path?
+
+com.deepseek.chat.common.protocol.DeltaCommand
+    file: defpackage\zu3.java
+    fields: p?, o?, v
+
+com.deepseek.chat.domain.biz.model.HifQueryBizData
+    file: defpackage\jb5.java
+    fields: value
+
+com.deepseek.chat.domain.chat.model.completion.event.ChatCompletionAutoTtsCapabilityData
+    file: defpackage\bv1.java
+    fields: status
+
+com.deepseek.chat.domain.chat.model.completion.event.ChatCompletionCheckClientUpdateEventData
+    file: defpackage\ev1.java
+    fields: show_key
+
+com.deepseek.chat.domain.chat.model.completion.event.ChatCompletionCloseEventData
+    file: defpackage\hv1.java
+    fields: click_behavior?
+
+com.deepseek.chat.domain.chat.model.completion.event.ChatCompletionReadyEventData
+    file: defpackage\rv1.java
+    fields: request_message_id?, response_message_id?, model_type?, request_content?
+
+com.deepseek.chat.domain.chat.model.completion.event.ChatCompletionTitleEventData
+    file: defpackage\ow1.java
+    fields: content
+
+com.deepseek.chat.domain.chat.model.completion.event.ChatCompletionToastEventData
+    file: defpackage\rw1.java
+    fields: content, finish_reason?
+
+com.deepseek.chat.domain.chat.model.completion.event.ChatCompletionUpdateParentMessageEventData
+    file: defpackage\xw1.java
+    fields: chat_message
+
+com.deepseek.chat.domain.chat.model.completion.event.ChatCompletionUpdateSessionEventData
+    file: defpackage\ax1.java
+    fields: updated_at
+
+com.deepseek.chat.domain.chat.model.completion.message.AppStaticMessage
+    file: defpackage\iy.java
+    fields: message_id, parent_id, role?, inserted_at, ban_edit?, ban_regenerate?, status, quasi_status?, thinking_enabled?, search_enabled?, search_triggered?, accumulated_token_usage?, extra_search_providers?, feedback?, tips?, fragments?, has_pending_fragment?, conversation_mode?, incomplete_message?
+
+com.deepseek.chat.domain.chat.model.completion.message.file.AppChatFile
+    file: defpackage\ds.java
+    fields: id, status, file_name, file_size, inserted_at, updated_at, token_usage?, previewable?, from_share?, signed_path?, is_image?, audit_result?, width?, height?, retryable?, local_outcome?
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFileFragmentSerializer.FileFragmentSurrogate
+    file: defpackage\lda.java
+    fields: id, files
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.ReadLinkFragment
+    file: defpackage\sda.java
+    fields: id, status
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.RequestFragment
+    file: defpackage\vda.java
+    fields: id, content
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.ResponseFragment
+    file: defpackage\yda.java
+    fields: id, content, references?, stage_id?
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.SearchFragment
+    file: defpackage\cea.java
+    fields: id, status, results?, queries?, content?, stage_id?
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.ThinkFragment
+    file: defpackage\fea.java
+    fields: id, content, elapsed_secs?, references?, stage_id?
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.TipFragment
+    file: defpackage\iea.java
+    fields: id, content, style, hide_on_wip?, is_group_delimiter?
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.ToolFindFragment
+    file: defpackage\lea.java
+    fields: id, status, pattern, content?, reference?, stage_id?
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.ToolOpenFragment
+    file: defpackage\oea.java
+    fields: id, status, content?, result?, reference?, stage_id?
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.StaticChatMessageFragment.UnknownFragment
+    file: defpackage\rea.java
+    fields: id
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.reference.FragmentReference.ToolFindFragmentReference
+    file: defpackage\vv4.java
+    fields: id
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.reference.FragmentReference.ToolOpenFragmentReference
+    file: defpackage\yv4.java
+    fields: id
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.reference.FragmentReference.ToolSearchFragmentReference
+    file: defpackage\bw4.java
+    fields: id
+
+com.deepseek.chat.domain.chat.model.completion.message.fragments.reference.FragmentReference.UnknownFragmentReference
+    file: defpackage\ew4.java
+    fields: id
+
+com.deepseek.chat.domain.chat.model.completion.message.hint.ServerMessageHint
+    file: defpackage\cs9.java
+    fields: content, clear_response?, finish_reason?
+
+com.deepseek.chat.domain.chat.model.completion.message.search.MessageSearchQuery
+    file: defpackage\f97.java
+    fields: query
+
+com.deepseek.chat.domain.chat.model.completion.message.search.MessageSearchResult
+    file: defpackage\i97.java
+    fields: url, title, snippet, cite_index?, published_at?, site_name?, site_icon?, query_indexes?, provider?
+
+com.deepseek.chat.domain.chat.model.completion.message.tip.MessageTip
+    file: defpackage\ca7.java
+    fields: content, position
+
+com.deepseek.chat.domain.chat.model.completion.sse.SseMessageRoot
+    file: defpackage\tba.java
+    fields: response
+
+com.deepseek.chat.network.auth.model.users.Birthday
+    file: defpackage\ep0.java
+    fields: year, month
+
+com.deepseek.chat.network.auth.model.users.CheckDeviceRequest
+    file: defpackage\yt2.java
+    fields: device_model, device_id
+
+com.deepseek.chat.network.auth.model.users.CheckDeviceResponseBizData
+    file: defpackage\bu2.java
+    fields: rotate?
+
+com.deepseek.chat.network.auth.model.users.CheckDeviceRotateData
+    file: defpackage\eu2.java
+    fields: token
+
+com.deepseek.chat.network.auth.model.users.CheckEmailVerificationCodeRequest
+    file: defpackage\ku2.java
+    fields: email, email_verification_code
+
+com.deepseek.chat.network.auth.model.users.CheckSmsCodeRequest
+    file: defpackage\uu2.java
+    fields: area_code, mobile_number, ticket, sms_verification_code, scenario
+
+com.deepseek.chat.network.auth.model.users.CreateEmailVerificationCodeRequest
+    file: defpackage\ff3.java
+    fields: email, locale, shumei_verification, hcaptcha_token, turnstile_token?, device_id, scenario
+
+com.deepseek.chat.network.auth.model.users.CreateSmsVerificationCodeRequest
+    file: defpackage\uf3.java
+    fields: mobile_number, ticket, locale, shumei_verification, hcaptcha_token, device_id, scenario
+
+com.deepseek.chat.network.auth.model.users.CreateVerificationCodeResponseBizData
+    file: defpackage\xf3.java
+    fields: send_window_secs
+
+com.deepseek.chat.network.auth.model.users.EmailResetPasswordRequest
+    file: defpackage\a94.java
+    fields: email, password, email_verification_code
+
+com.deepseek.chat.network.auth.model.users.GetBirthdayResponseBizData
+    file: defpackage\c45.java
+    fields: birthday?
+
+com.deepseek.chat.network.auth.model.users.GuestChallengeRequest
+    file: defpackage\c85.java
+    fields: target_path
+
+com.deepseek.chat.network.auth.model.users.GuestChallengeResponseBizData
+    file: defpackage\f85.java
+    fields: guest_challenge
+
+com.deepseek.chat.network.auth.model.users.MfaCheckVerificationCodeRequest
+    file: defpackage\gb7.java
+    fields: mfa_session_id, verification_code
+
+com.deepseek.chat.network.auth.model.users.MfaCreateVerificationCodeRequest
+    file: defpackage\mb7.java
+    fields: mfa_session_id, shumei_device_id, shumei_verification?, hcaptcha_token?, turnstile_token?
+
+com.deepseek.chat.network.auth.model.users.MfaSessionResponseBizData
+    file: defpackage\tb7.java
+    fields: mfa_session_id, mfa_challenge?
+
+com.deepseek.chat.network.auth.model.users.MfaTrustedDeviceRegisterRequest
+    file: defpackage\zb7.java
+    fields: mfa_ticket, mfa_public_key, mfa_algorithm
+
+com.deepseek.chat.network.auth.model.users.MfaTrustedDeviceRegisterResponseBizData
+    file: defpackage\cc7.java
+    fields: mfa_ticket, credential_id, mfa_challenge
+
+com.deepseek.chat.network.auth.model.users.MfaTrustedDeviceVerifyRequest
+    file: defpackage\ic7.java
+    fields: mfa_ticket, mfa_signature
+
+com.deepseek.chat.network.auth.model.users.MfaTrustedDeviceVerifyResponseBizData
+    file: defpackage\lc7.java
+    fields: credential_id, expire_at
+
+com.deepseek.chat.network.auth.model.users.MfaVerifySignatureRequest
+    file: defpackage\rc7.java
+    fields: mfa_session_id, mfa_signature
+
+com.deepseek.chat.network.auth.model.users.MobileResetPasswordRequest
+    file: defpackage\bf7.java
+    fields: area_code, mobile_number, password, sms_verification_code
+
+com.deepseek.chat.network.auth.model.users.RebindMobileFinishRequest
+    file: defpackage\nz8.java
+    fields: ticket, new_mobile_number, new_mobile_sms_verification_code, device_id
+
+com.deepseek.chat.network.auth.model.users.RebindMobileStartRequest
+    file: defpackage\wz8.java
+    fields: scenario
+
+com.deepseek.chat.network.auth.model.users.RebindMobileStartResponseBizData
+    file: defpackage\zz8.java
+    fields: old_mobile_number, ticket
+
+com.deepseek.chat.network.auth.model.users.RegisterByEmailRequest
+    file: defpackage\w49.java
+    fields: region, locale, device_id, payload
+
+com.deepseek.chat.network.auth.model.users.RegisterByEmailRequestPayload
+    file: defpackage\z49.java
+    fields: email, email_verification_code, password
+
+com.deepseek.chat.network.auth.model.users.RegisterResponseBizData
+    file: defpackage\c59.java
+    fields: user
+
+com.deepseek.chat.network.auth.model.users.SetBirthdayRequest
+    file: defpackage\gu9.java
+    fields: year, month, gate_type?
+
+com.deepseek.chat.network.auth.model.users.SetBirthdayResponseBizData
+    file: defpackage\ku9.java
+    fields: minor_mode_status?
+
+com.deepseek.chat.network.auth.model.users.ShumeiVerification
+    file: defpackage\p2a.java
+    fields: region, rid
+
+com.deepseek.chat.network.auth.model.users.UsersLoginByMobileSmsRequest
+    file: defpackage\rlb.java
+    fields: mobile_number, sms_verification_code, area_code, device_id
+
+com.deepseek.chat.network.auth.model.users.UsersLoginResponseBizData
+    file: defpackage\ulb.java
+    fields: user, mfa_ticket?
+
+com.deepseek.chat.network.auth.model.users.UsersLoginWithEmailAndPwdRequest
+    file: defpackage\xlb.java
+    fields: email, password, device_id, credential_id?
+
+com.deepseek.chat.network.auth.model.users.UsersLoginWithPhoneAndPwdRequest
+    file: defpackage\amb.java
+    fields: mobile, area_code?, password, device_id, credential_id?
+
+com.deepseek.chat.network.auth.model.users.VerifyDisabledOldMobileRequest
+    file: defpackage\ppb.java
+    fields: ticket, old_mobile_number
+
+com.deepseek.chat.network.auth.model.users.VerifyDisabledOldMobileResponseBizData
+    file: defpackage\spb.java
+    fields: remaining_attempts?
+
+com.deepseek.chat.network.auth.model.users.oauth.GoogleSignInCustomTabsRequest
+    file: defpackage\k65.java
+    fields: device_id, nonce, provider?
+
+com.deepseek.chat.network.auth.model.users.oauth.GoogleSignInRequest
+    file: defpackage\p65.java
+    fields: device_id, id_token, shumei_verification, hcaptcha_token
+
+com.deepseek.chat.network.auth.model.users.oauth.OneTapLoginFlyVerifyRequest
+    file: defpackage\r08.java
+    fields: token, op_token
+
+com.deepseek.chat.network.auth.model.users.oauth.OneTapLoginRequest
+    file: defpackage\u08.java
+    fields: fly_verify
+
+com.deepseek.chat.network.auth.model.users.oauth.WeChatSignInBizData
+    file: defpackage\jvb.java
+    fields: user?, signature?
+
+com.deepseek.chat.network.auth.model.users.oauth.WeChatSignInMobileVerificationBizData
+    file: defpackage\mvb.java
+    fields: user
+
+com.deepseek.chat.network.auth.model.users.oauth.WeChatSignInMobileVerificationRequest
+    file: defpackage\pvb.java
+    fields: signature, mobile_number, area_code, sms_verification_code
+
+com.deepseek.chat.network.auth.model.users.oauth.WeChatSignInRequest
+    file: defpackage\svb.java
+    fields: device_id, code, channel
+
+com.deepseek.chat.network.chat.model.asr.AsrClientEvent.Cancel
+    file: defpackage\l20.java
+    fields: finish_reason?
+
+com.deepseek.chat.network.chat.model.asr.AsrClientEvent.Done
+    file: defpackage\o20.java
+    fields: finish_reason?
+
+com.deepseek.chat.network.chat.model.chat.ChatChallengeRequest
+    file: defpackage\ru1.java
+    fields: target_path
+
+com.deepseek.chat.network.chat.model.chat.ChatChallengeResponseBizData
+    file: defpackage\uu1.java
+    fields: challenge
+
+com.deepseek.chat.network.chat.model.chat.ChatCompletionResponseMutedJsonData
+    file: defpackage\wv1.java
+    fields: is_muted?, mute_until?
+
+com.deepseek.chat.network.chat.model.chat.ChatContinueRequest
+    file: defpackage\cy1.java
+    fields: chat_session_id, message_id, fallback_to_resume
+
+com.deepseek.chat.network.chat.model.chat.ChatEditMessageRequest
+    file: defpackage\ky1.java
+    fields: chat_session_id, message_id, prompt, ref_file_ids?, thinking_enabled, search_enabled, client_stream_id?, action?
+
+com.deepseek.chat.network.chat.model.chat.ChatFullCompletionRequest
+    file: defpackage\iz1.java
+    fields: chat_session_id, parent_message_id, prompt, ref_file_ids?, thinking_enabled?, search_enabled?, audio_id?, preempt, model_type?, action?
+
+com.deepseek.chat.network.chat.model.chat.ChatHistoryMessagesResponseBizData
+    file: defpackage\uz1.java
+    fields: chat_session, chat_messages, cache_control, cache_reset_at?
+
+com.deepseek.chat.network.chat.model.chat.ChatRegenerateRequest
+    file: defpackage\gg2.java
+    fields: chat_session_id, child_message_id, thinking_enabled, search_enabled, user_options
+
+com.deepseek.chat.network.chat.model.chat.ChatResumeStreamRequest
+    file: defpackage\lg2.java
+    fields: chat_session_id, message_id, interaction_type
+
+com.deepseek.chat.network.chat.model.chat.ChatStopStreamRequest
+    file: defpackage\mr2.java
+    fields: chat_session_id, message_id
+
+com.deepseek.chat.network.chat.model.chat.MessageFeedbackRequest
+    file: defpackage\c87.java
+    fields: chat_session_id, message_id, feedback_type, feedback_tag?, description?
+
+com.deepseek.chat.network.chat.model.chat.RegenerateOptions
+    file: defpackage\a49.java
+    fields: verbosity?, search?
+
+com.deepseek.chat.network.chat.model.chat.ServerChatChallenge
+    file: defpackage\mr9.java
+    fields: algorithm, challenge, salt, signature, difficulty, expire_at, expire_after, target_path?
+
+com.deepseek.chat.network.chat.model.chat.ServerChatMessageFeedback
+    file: defpackage\pr9.java
+    fields: feedback_type
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionBatchUpdatePinnedRequest
+    file: defpackage\ai2.java
+    fields: pinned, chat_session_ids
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionBatchUpdatePinnedResponseBizData
+    file: defpackage\di2.java
+    fields: illegal_chat_session_ids?, updated_chat_sessions?, ignored_chat_session_ids?
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionBatchUpdatedItem
+    file: defpackage\gi2.java
+    fields: id, updated_at
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionCreateBizData
+    file: defpackage\ll2.java
+    fields: chat_session, ttl_seconds?
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionDeleteRequest
+    file: defpackage\sl2.java
+    fields: chat_session_id?, chat_session_ids?
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionFetchPageResponseBizData
+    file: defpackage\em2.java
+    fields: chat_sessions?, has_more?
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionUpdatePinnedRequest
+    file: defpackage\yp2.java
+    fields: chat_session_id, pinned
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionUpdatePinnedResponseBizData
+    file: defpackage\bq2.java
+    fields: chat_session_updated_at?
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionUpdateTitleRequest
+    file: defpackage\eq2.java
+    fields: chat_session_id, title
+
+com.deepseek.chat.network.chat.model.chat_session.ChatSessionUpdateTitleResponseBizData
+    file: defpackage\hq2.java
+    fields: chat_session_updated_at?, title?
+
+com.deepseek.chat.network.chat.model.chat_session.ServerChatSession
+    file: defpackage\sr9.java
+    fields: id, title?, version?, current_message_id?, inserted_at?, updated_at?, title_type?, pinned?, model_type?, is_empty?
+
+com.deepseek.chat.network.chat.model.client.SearchSpanAttributes.SearchResultClick
+    file: defpackage\yl9.java
+    fields: chat_session_id, message_id, url, origin
+
+com.deepseek.chat.network.chat.model.client.SearchSpanAttributes.SearchResultOpen
+    file: defpackage\bm9.java
+    fields: surl, durl, status_code, error_type, chat_session_id, message_id, origin
+
+com.deepseek.chat.network.chat.model.client.SearchSpanAttributes.SearchResultView
+    file: defpackage\hm9.java
+    fields: chat_session_id, message_id, url, origin, duration
+
+com.deepseek.chat.network.chat.model.client.SearchSpanAttributes.SearchResultViewDetail
+    file: defpackage\km9.java
+    fields: surl, sQueries, webPageReportInfos
+
+com.deepseek.chat.network.chat.model.client.SearchSpanAttributes.SearchResultViewDetail.WebPageReportInfo
+    file: defpackage\mm9.java
+    fields: durl, httpCode, loadStatus, loadDuration, loadErrorMessage, viewDuration, clickTimes, title, jsReportJSONStr
+
+com.deepseek.chat.network.chat.model.client.SearchSpanRequest
+    file: defpackage\vm9.java
+    fields: name, start_time, end_time, attributes
+
+com.deepseek.chat.network.chat.model.client.SettingsReportRequest
+    file: defpackage\iw9.java
+    fields: settings_ids, did, sso_id
+
+com.deepseek.chat.network.chat.model.file.ForkFileRequest
+    file: defpackage\vt4.java
+    fields: file_id, from_model_type, to_model_type
+
+com.deepseek.chat.network.chat.model.file.QueryFileStatusResponseBizData
+    file: defpackage\cv8.java
+    fields: files
+
+com.deepseek.chat.network.chat.model.index.HighlightText
+    file: defpackage\bc5.java
+    fields: parts, is_begin, is_end
+
+com.deepseek.chat.network.chat.model.index.HighlightTextPart
+    file: defpackage\ec5.java
+    fields: highlight, text
+
+com.deepseek.chat.network.chat.model.index.IndexEventChatSessionTitleItem
+    file: defpackage\vp5.java
+    fields: id, title, timestamp, seq_id, model_type
+
+com.deepseek.chat.network.chat.model.index.IndexEventClose
+    file: defpackage\yp5.java
+    fields: close_reason
+
+com.deepseek.chat.network.chat.model.index.IndexEventItem
+    file: defpackage\bq5.java
+    fields: chat_session_id, message_id, message_role, parent_message_id?, timestamp, seq_id, chat_session_title?, chat_session_model_type, content?, is_think, files?, branch_index, total_branches
+
+com.deepseek.chat.network.chat.model.index.IndexEventItemFile
+    file: defpackage\eq5.java
+    fields: id, file_name
+
+com.deepseek.chat.network.chat.model.index.IndexEventStatus
+    file: defpackage\hq5.java
+    fields: queried_seq_id
+
+com.deepseek.chat.network.chat.model.index.IndexQueryRequest
+    file: defpackage\kq5.java
+    fields: query, before_seq_id?
+
+com.deepseek.chat.network.chat.model.share.ShareContentResponseBizData
+    file: defpackage\uy9.java
+    fields: title, model_type?, messages
+
+com.deepseek.chat.network.chat.model.share.ShareCreateRequest
+    file: defpackage\az9.java
+    fields: chat_session_id, message_ids
+
+com.deepseek.chat.network.chat.model.share.ShareCreateResponseBizData
+    file: defpackage\dz9.java
+    fields: share_id
+
+com.deepseek.chat.network.chat.model.share.ShareDeleteRequest
+    file: defpackage\gz9.java
+    fields: share_id
+
+com.deepseek.chat.network.chat.model.share.ShareForkRequest
+    file: defpackage\mz9.java
+    fields: share_id
+
+com.deepseek.chat.network.chat.model.share.ShareForkResponseBizData
+    file: defpackage\pz9.java
+    fields: chat_session_id
+
+com.deepseek.chat.network.chat.model.share.ShareListItem
+    file: defpackage\b0a.java
+    fields: share_id, hint, created_at, chat_session_id
+
+com.deepseek.chat.network.chat.model.share.ShareListResponseBizData
+    file: defpackage\e0a.java
+    fields: shares, has_more
+
+com.deepseek.chat.network.chat.model.tts.ServerTtsVoice
+    file: defpackage\ms9.java
+    fields: voice_id, name_i18n, description_i18n, gender, languages, demo_urls, is_default, color_palette?
+
+com.deepseek.chat.network.chat.model.tts.ServerVoiceColorPalette
+    file: defpackage\vs9.java
+    fields: c1?, c2?, c3?
+
+com.deepseek.chat.network.chat.model.tts.SetTtsVoiceRequest
+    file: defpackage\ru9.java
+    fields: voice_id
+
+com.deepseek.chat.network.chat.model.tts.TtsRequest
+    file: defpackage\u8b.java
+    fields: chat_session_id, message_id, mode, format
+
+com.deepseek.chat.network.chat.model.tts.TtsResumeRequest
+    file: defpackage\d9b.java
+    fields: chat_session_id, message_id, audio_id, received_seq, played_seq
+
+com.deepseek.chat.network.chat.model.tts.TtsVoiceListBizData
+    file: defpackage\kab.java
+    fields: voices, default_voice_id, current_voice_id
+
+com.deepseek.chat.network.chat.model.users.AuthTokenItem
+    file: defpackage\od0.java
+    fields: token_id?, is_current?, label?, client_platform?, device_name?, created_at?
+
+com.deepseek.chat.network.chat.model.users.AuthTokenItem.Label
+    file: defpackage\qd0.java
+    fields: style?, text?
+
+com.deepseek.chat.network.chat.model.users.AuthTokenRevokeRequest
+    file: defpackage\ae0.java
+    fields: token_id
+
+com.deepseek.chat.network.chat.model.users.AuthTokensListResponseBizData
+    file: defpackage\de0.java
+    fields: auth_tokens
+
+com.deepseek.chat.network.chat.model.users.UpdateUserSettingsRequest
+    file: defpackage\ohb.java
+    fields: training_allowed?
+
+com.deepseek.chat.network.chat.model.users.WeChatBindRequest
+    file: defpackage\uub.java
+    fields: code, channel
+
+com.deepseek.chat.network.common.model.ChallengeResponse
+    file: defpackage\qr1.java
+    fields: provider, challenge_id?, shumei_verification?, shumei_device_id?, hcaptcha_token?
+
+com.deepseek.chat.network.common.model.ChallengeResponse.ShumeiVerification
+    file: defpackage\sr1.java
+    fields: rid, region
+
+com.deepseek.chat.network.common.model.ServerBodyResponse
+    file: defpackage\kr9.java
+    fields: code, msg, data?
+
+com.deepseek.chat.network.common.model.ServerResponseBizDataWrapper
+    file: defpackage\gs9.java
+    fields: biz_code, biz_msg, biz_data?
+
+com.deepseek.chat.network.common.model.ServerUserInfo
+    file: defpackage\ps9.java
+    fields: token, id, email?, mobile_number?, status, id_profile?, id_profiles?, chat, need_birthday?, is_mainland?, minor_mode_status?
+
+com.deepseek.chat.network.common.model.UserChatStatus
+    file: defpackage\bkb.java
+    fields: is_muted?, mute_until?, msg?
+
+com.deepseek.chat.network.common.model.UserIdProfile
+    file: defpackage\jkb.java
+    fields: provider?, id, name?, email?, picture?
+
+com.deepseek.chat.network.guest.model.check.AltAppData
+    file: defpackage\va.java
+    fields: show_content, android_app_link?
+
+com.deepseek.chat.network.guest.model.check.CheckClientUpdateResponseBizData
+    file: defpackage\st2.java
+    fields: show_key, show_content, alt_app?
+
+com.deepseek.chat.network.guest.model.check.CheckClientUpdateShowContent
+    file: defpackage\vt2.java
+    fields: title
+
+com.deepseek.chat.network.guest.model.check.ClientVersionTooLowData
+    file: defpackage\dz2.java
+    fields: alt_app?
+
+com.deepseek.chat.network.guest.model.client.ClientSettingsResponseBizData
+    file: defpackage\fy2.java
+    fields: settings, version
+
+com.deepseek.chat.network.guest.model.ip.IpToRegionBizData
+    file: defpackage\rx5.java
+    fields: ip, code
+
+com.deepseek.chat.settings.AlertConfig
+    file: defpackage\i9.java
+    fields: content, show_key
+
+com.deepseek.chat.settings.AlertContent
+    file: defpackage\l9.java
+    fields: title, description, image?, button_group, dismiss_affordances?
+
+com.deepseek.chat.settings.BannerConfig
+    file: defpackage\uj0.java
+    fields: content, show_key
+
+com.deepseek.chat.settings.BannerContent
+    file: defpackage\xj0.java
+    fields: title, description, image?, dismiss_affordances?
+
+com.deepseek.chat.settings.Button
+    file: defpackage\zu0.java
+    fields: text, style?
+
+com.deepseek.chat.settings.ButtonGroup
+    file: defpackage\kv0.java
+    fields: button_layout?, buttons
+
+com.deepseek.chat.settings.IconTint
+    file: defpackage\gk5.java
+    fields: light, dark
+
+com.deepseek.chat.settings.Image
+    file: defpackage\lk5.java
+    fields: url, tint?
+
+com.deepseek.chat.settings.ModelConfig
+    file: defpackage\jg7.java
+    fields: model_type, name, description, welcome_msg, is_default, enabled?, switchable?, show_model_name_in_session, input_character_limit?, think_feature?, search_feature?, tts_feature?, file_feature?, call_feature?, camera_mode?, prompt_feature?, regenerate_options?, tips, edit_quota?, regenerate_quota?
+
+com.deepseek.chat.settings.ModelConfig.CallFeature
+    file: defpackage\kg7.java
+
+com.deepseek.chat.settings.ModelConfig.FileFeature
+    file: defpackage\og7.java
+    fields: token_limit, token_limit_with_thinking, max_input_file_count, max_upload_file_size, support_file_exts?, conflict_with_search?, vision?, enable_thumbnail?
+
+com.deepseek.chat.settings.ModelConfig.PromptTemplate
+    file: defpackage\rg7.java
+    fields: id, scene, content
+
+com.deepseek.chat.settings.ModelConfig.SearchFeature
+    file: defpackage\zg7.java
+
+com.deepseek.chat.settings.ModelConfig.ThinkFeature
+    file: defpackage\ch7.java
+
+com.deepseek.chat.settings.ModelConfig.Tips
+    file: defpackage\fh7.java
+    fields: input_field_banner?, upload_panel_hint?
+
+com.deepseek.chat.settings.ModelConfig.TtsFeature
+    file: defpackage\ih7.java
+    fields: auto_tts_enable_by_default?
+
+com.deepseek.chat.settings.ProviderConfig
+    file: defpackage\et8.java
+    fields: provider_id, brand_icon, brand_name, inline_display?, summary_display?, priority, citation_dedupe_scope?, brand_target?
+
+com.deepseek.chat.settings.ProviderConfig.BrandTarget
+    file: defpackage\it8.java
+    fields: url, title, snippet
+
+com.deepseek.chat.settings.WelcomeMsgConfig
+    file: defpackage\bxb.java
+    fields: messages?, time_config?, fallback_message?
+
+com.deepseek.chat.settings.WelcomeMsgConfig.Message
+    file: defpackage\dxb.java
+    fields: id?, text?
+
+com.deepseek.chat.settings.WelcomeMsgConfig.TimeConfig
+    file: defpackage\gxb.java
+    fields: start?, end?, use?
+
+com.deepseek.chat.ui.pages.AgeScreenRoute
+    file: defpackage\k8.java
+    fields: userHasConfirmedWelcome
+
+com.deepseek.chat.ui.pages.AuthNestedGraph.MobileRebindRoute
+    file: defpackage\kc0.java
+    fields: ticket, oldMobileNumber
+
+com.deepseek.chat.ui.pages.AuthNestedGraph.MobileVerificationRoute
+    file: defpackage\nc0.java
+    fields: signature
+
+com.deepseek.chat.ui.pages.AuthNestedGraph.ResetPasswordRoute
+    file: defpackage\sc0.java
+    fields: account
+
+com.deepseek.chat.ui.pages.SearchResultWebViewRoute
+    file: defpackage\pl9.java
+    fields: url, queries, chatSessionId?, messageId?, parentMessageId?, chatMessageRole?, modelType?, conversationMode?, enterFrom?
+
+com.deepseek.chat.ui.pages.WebViewRoute
+    file: defpackage\vwb.java
+    fields: url, displayDurationMetric?, chatSessionId?, messageId?, origin?, isFeedbackPage?
+
+com.deepseek.chat.ui.pages.chat.SearchTrigger
+    file: defpackage\cn9.java
+    fields: trigger, trigger_version
+
+com.deepseek.chat.ui.pages.webview.JsUserInfo
+    file: defpackage\c16.java
+    fields: id, email, mobile
+
+com.deepseek.chat.wxapi.WxReqModel.FileUploadReq
+    file: defpackage\g1c.java
+    fields: userId, modelType?, files?
+
+com.deepseek.chat.wxapi.WxReqModel.OpenLinkReq
+    file: defpackage\j1c.java
+    fields: link
+
+com.deepseek.chat.wxapi.WxReqModel.UnknownReq
+    file: defpackage\m1c.java
+
+com.deepseek.core.protocol.telemetry.TelemetryRequest
+    file: defpackage\jra.java
+    fields: events, extra
+
+com.deepseek.core.protocol.telemetry.TelemetryRequest.Event
+    file: defpackage\lra.java
+    fields: event_name, event_params
+
+com.deepseek.core.protocol.telemetry.TelemetryRequest.Extra
+    file: defpackage\nra.java
+    fields: uid, ds_did
+
+com.deepseek.feature.call.data.remote.model.CallAgent
+    file: defpackage\g01.java
+    fields: bot_id
+
+com.deepseek.feature.call.data.remote.model.CallConfig
+    file: defpackage\g11.java
+    fields: voices, default_voice_id, languages, stt_languages, providers?, voice_id?, search_enabled?
+
+com.deepseek.feature.call.data.remote.model.CallMutedData
+    file: defpackage\p51.java
+    fields: mute_until?
+
+com.deepseek.feature.call.data.remote.model.CallRatingRequest
+    file: defpackage\g81.java
+    fields: session_id, feedback_type?, feedback_tag?, description?, dismissed?
+
+com.deepseek.feature.call.data.remote.model.CallRatingResponse
+    file: defpackage\j81.java
+    fields: status
+
+com.deepseek.feature.call.data.remote.model.CallRoom
+    file: defpackage\r81.java
+    fields: room_id, role
+
+com.deepseek.feature.call.data.remote.model.CallStartErrorData
+    file: defpackage\aa1.java
+
+com.deepseek.feature.call.data.remote.model.CallStartVoice
+    file: defpackage\ea1.java
+    fields: voice_id
+
+com.deepseek.feature.call.data.remote.model.CallStopRequest
+    file: defpackage\na1.java
+    fields: session_id
+
+com.deepseek.feature.call.data.remote.model.CallStopResponse
+    file: defpackage\qa1.java
+    fields: status, show_rating
+
+com.deepseek.feature.call.data.remote.model.CallUpdateErrorData
+    file: defpackage\mb1.java
+
+com.deepseek.feature.call.data.remote.model.CallUpdateRequest
+    file: defpackage\qb1.java
+    fields: session_id, voice_id?, search_enabled?, provider?
+
+com.deepseek.feature.call.data.remote.model.CallUpdateResponse
+    file: defpackage\tb1.java
+    fields: status
+
+com.deepseek.feature.call.data.remote.model.TrtcCallConnection
+    file: defpackage\b5b.java
+    fields: sdk_app_id, user_id, user_sig
+
+com.deepseek.feature.call.data.remote.model.TrtcCallStartBizData
+    file: defpackage\q5b.java
+    fields: status, session_id, chat_session_id, task_id?, room, connection, agent, voice
+
+com.deepseek.feature.call.data.remote.model.TrtcCallStartRequest
+    file: defpackage\t5b.java
+    fields: chat_session_id, parent_message_id, stt_language?
+
+com.deepseek.feature.call.rtc.protocol.TrtcAgentStateParser.AgentStateMessage
+    file: defpackage\j4b.java
+    fields: sender, payload
+
+com.deepseek.feature.call.rtc.protocol.TrtcAgentStateParser.AgentStatePayload
+    file: defpackage\m4b.java
+    fields: timestamp, roundid?
+
+com.deepseek.feature.call.rtc.protocol.TrtcMetaInfoMessage
+    file: defpackage\o6b.java
+    fields: sender?, roundid?, payload
+
+end
+    file: defpackage\s20.java
+    fields: code?, msg?, toast?
+
+finish
+    file: defpackage\uy2.java
+    fields: code
+
+hard_stop
+    file: defpackage\s6b.java
+    fields: session_id, reason
+
+io.ktor.util.date.GMTDate
+    file: defpackage\m25.java
+    fields: seconds, minutes, hours, dayOfWeek, dayOfMonth, dayOfYear, month, year, timestamp
+
+ready
+    file: defpackage\z7b.java
+    fields: audio_id
+
+result
+    file: defpackage\v20.java
+    fields: result
+
+start
+    file: defpackage\y20.java
+    fields: audio_id
+
+tts_language_unsupported
+    file: defpackage\v6b.java
+    fields: language
+
+user_message
+    file: defpackage\y6b.java
+    fields: text, parent_message_id?, message_id?, response_message_id?, request_id?, response_id?
